@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  budget: 9.99
+  money: MyString
+  published_date: 2016-11-19
+  deadline: 2016-11-19
+  result_date: 2016-11-19
+  company: one
+  category: one
+  status: MyString
+
+two:
+  name: MyString
+  description: MyText
+  budget: 9.99
+  money: MyString
+  published_date: 2016-11-19
+  deadline: 2016-11-19
+  result_date: 2016-11-19
+  company: two
+  category: two
+  status: MyString

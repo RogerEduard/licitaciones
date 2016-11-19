@@ -1,0 +1,35 @@
+<%- model_class = Customer -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:ruc) %>:</strong></dt>
+  <dd><%= @customer.ruc %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @customer.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @customer.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:password) %>:</strong></dt>
+  <dd><%= @customer.password %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:register_date) %>:</strong></dt>
+  <dd><%= @customer.register_date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:card_type) %>:</strong></dt>
+  <dd><%= @customer.card_type %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:card_number) %>:</strong></dt>
+  <dd><%= @customer.card_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
+  <dd><%= @customer.status %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              customer_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_customer_path(@customer), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              customer_path(@customer),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

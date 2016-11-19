@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Oportunities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Budget</th>
+      <th>Money</th>
+      <th>Published date</th>
+      <th>Deadline</th>
+      <th>Result date</th>
+      <th>Company</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @oportunities.each do |oportunity| %>
+      <tr>
+        <td><%= oportunity.name %></td>
+        <td><%= oportunity.description %></td>
+        <td><%= oportunity.budget %></td>
+        <td><%= oportunity.money %></td>
+        <td><%= oportunity.published_date %></td>
+        <td><%= oportunity.deadline %></td>
+        <td><%= oportunity.result_date %></td>
+        <td><%= oportunity.company %></td>
+        <td><%= oportunity.category %></td>
+        <td><%= oportunity.status %></td>
+        <td><%= link_to 'Show', oportunity %></td>
+        <td><%= link_to 'Edit', edit_oportunity_path(oportunity) %></td>
+        <td><%= link_to 'Destroy', oportunity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Oportunity', new_oportunity_path %>

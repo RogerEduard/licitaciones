@@ -1,0 +1,1 @@
+json.array! @oportunities, partial: 'oportunities/oportunity', as: :oportunity

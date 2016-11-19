@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ruc:</strong>
+  <%= @customer.ruc %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @customer.password %>
+</p>
+
+<p>
+  <strong>Register date:</strong>
+  <%= @customer.register_date %>
+</p>
+
+<p>
+  <strong>Card type:</strong>
+  <%= @customer.card_type %>
+</p>
+
+<p>
+  <strong>Card number:</strong>
+  <%= @customer.card_number %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @customer.status %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

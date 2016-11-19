@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @oportunity.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @oportunity.description %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @oportunity.budget %>
+</p>
+
+<p>
+  <strong>Money:</strong>
+  <%= @oportunity.money %>
+</p>
+
+<p>
+  <strong>Published date:</strong>
+  <%= @oportunity.published_date %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @oportunity.deadline %>
+</p>
+
+<p>
+  <strong>Result date:</strong>
+  <%= @oportunity.result_date %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @oportunity.company %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @oportunity.category %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @oportunity.status %>
+</p>
+
+<%= link_to 'Edit', edit_oportunity_path(@oportunity) %> |
+<%= link_to 'Back', oportunities_path %>
